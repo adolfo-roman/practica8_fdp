@@ -12,6 +12,7 @@ int main (void) {
     //Declarar variables
     float temp, res;
     int a, b, c;
+    char x;
     enum conv {CF, CK, FC, FK, KC, KF};
     enum conv valorConv;
 
@@ -186,8 +187,20 @@ int main (void) {
 
     }
 
-    scanf("%i", &a);
+    do {
+      printf("Desea realizar otra operacion? (y/n)");
+      getchar("%c", &x);
+    } while(x == 'y' || x == 'n');
 
-    main();
+
+    if(x == 'y')
+    {
+      main();
+    }
+    else
+    {
+      printf("Gracias por usar el convertidor de Temperatura\n");
+      return 0;
+    }
 
 }
