@@ -142,8 +142,8 @@ int main (void) {
 
     switch (c) {
       case 12:
-        res = ((9*temp)/5)+32
-        printf("%.1i Celsius es igual a %.1i Fahrenheit", temp, res);
+        res = ((9*temp)/5)+32;
+        printf("%.1f Celsius es igual a %.1f Fahrenheit", temp, res);
         break;
     }
 
