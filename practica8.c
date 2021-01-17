@@ -12,6 +12,8 @@ int main (void) {
     //Declarar variables
     float temp, res;
     int a, b, c;
+    enum conv {CF, CK, FC, FK, KC, KF};
+    enum conv valorConv;
 
     //Estructura primer caso
     system("clear");
@@ -41,8 +43,7 @@ int main (void) {
     }
     while (a < 1 || a > 3);
 
-    enum conv {CF, CK, FC, FK, KC, KF};
-    enum conv valorConv;
+    system("clear");
 
     switch (a) {
       case 1:
@@ -61,8 +62,9 @@ int main (void) {
 
           if (b < 1 || b > 2)
           {
-              printf("Por favor ingrese una opcion valida\n");
-              printf("\n");
+            system("clear");
+            printf("Por favor ingrese una opcion valida\n");
+            printf("\n");
           }
       }
       while (b < 1 || b > 2);
@@ -93,8 +95,9 @@ int main (void) {
 
           if (b < 1 || b > 2)
           {
-              printf("Por favor ingrese una opcion valida\n");
-              printf("\n");
+            system("clear");
+            printf("Por favor ingrese una opcion valida\n");
+            printf("\n");
           }
       }
       while (b < 1 || b > 2);
@@ -125,8 +128,9 @@ int main (void) {
 
           if (b < 1 || b > 2)
           {
-              printf("Por favor ingrese una opcion valida\n");
-              printf("\n");
+            system("clear");
+            printf("Por favor ingrese una opcion valida\n");
+            printf("\n");
           }
       }
       while (b < 1 || b > 2);
@@ -143,8 +147,10 @@ int main (void) {
 
     }
 
-    printf("Por favor ingrese la temperatura a convertir: \n");
+    system("clear");
+    printf("Ingrese la temperatura a convertir: ");
     scanf("%f", &temp);
+    system("clear");
 
     switch (valorConv) {
       case CF: //Convierte C -> F
@@ -163,17 +169,17 @@ int main (void) {
         break;
 
       case FK: //Convierte F -> K
-        res = (5/9)*(temp-32);
+        res = (5/9)*(temp-32)+273.15;
         printf("%.1f Fahrenheit es igual a %.2f Kelvin", temp, res);
         break;
 
       case KC: //Convierte K -> C
-        res = (5/9)*(temp-32);
+        res = temp - 273.15;
         printf("%.2f Kelvin es igual a %.1f Celsius", temp, res);
         break;
 
       case KF: //Convierte K -> F
-        res = (5/9)*(temp-32);
+        res = ((9/5)*(temp-273.15))+32;
         printf("%.2f Kelvin es igual a %.1f Fahrenheit", temp, res);
         break;
 
