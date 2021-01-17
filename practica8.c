@@ -38,6 +38,9 @@ int main (void) {
     }
     while (a < 1 || a > 3);
 
+    enum conv {CF, CK, FC, FK, KC, KF};
+    enum conv valorConv;
+
     switch (a) {
       case 1:
       do
@@ -63,11 +66,11 @@ int main (void) {
 
       if(b == 1)
       {
-        c = 12;
+        valorConv = CF;
       }
       else
       {
-        c = 13;
+        valorConv = CK;
       }
       break;
 
@@ -95,11 +98,11 @@ int main (void) {
 
       if(b == 1)
       {
-        c = 21;
+        valorConv = FC;
       }
       else
       {
-        c = 23;
+        valorConv = FK;
       }
       break;
 
@@ -127,11 +130,11 @@ int main (void) {
 
       if(b == 1)
       {
-        c = 31;
+        valorConv = KC;
       }
       else
       {
-        c = 32;
+        valorConv = KF;
       }
       break;
 
@@ -140,18 +143,18 @@ int main (void) {
     printf("Por favor ingrese la temperatura a convertir: \n");
     scanf("%f", &temp);
 
-    switch (c) {
-      case 12: //Convierte C -> F
+    switch (valorConv) {
+      case 1: //Convierte C -> F
         res = ((9*temp)/5)+32;
         printf("%.1f Celsius es igual a %.1f Fahrenheit", temp, res);
         break;
 
-      case 13: //Convierte C -> K
+      case 2: //Convierte C -> K
         res = temp + 273.15;
         printf("%.1f Celsius es igual a %.2f Kelvin", temp, res);
         break;
 
-      case 21: //Convierte F -> C
+      case 3: //Convierte F -> C
         res = (5/9)*(temp-32);
         printf("%.1f Fahrenheit es igual a %.1f Celsius", temp, res);
         break;
