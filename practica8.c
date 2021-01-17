@@ -21,7 +21,7 @@ int main (void) {
   printf("2) Fahrenheit\n");
   printf("3) Kelvin\n");
 
-  scanf("%i\n", &a);
+  scanf("%i", &a);
 
   printf("Escogiste: %i\n", a);
 
