@@ -15,20 +15,28 @@ int main (void) {
     //Estructura primer caso
     printf("***Convertidor de Temperatura***\n");
     printf("\n");
-    printf("Escoge la temperatura inicial:");
-    printf("\n");
-    printf("1) Celsius\n");
-    printf("2) Fahrenheit\n");
-    printf("3) Kelvin\n");
-    printf("\n");
 
-    scanf("%i", &a);
-
-    while (a != 1 || a != 2 || a != 3)
+    do
     {
-        printf("Por favor ingrese una opcion valida\n");
-        main()
+        printf("Escoge la temperatura inicial: \n");
+        printf("\n");
+        printf("1) Celsius\n");
+        printf("2) Fahrenheit\n");
+        printf("3) Kelvin\n");
+
+        printf("\n");
+
+        scanf("%i", &a);
+
+        if (a < 1 || a > 3)
+        {
+            printf("Por favor ingrese una opcion valida\n");
+            printf("\n");
+        }
     }
+    while (a < 1 || a > 3);
+
+
 
 
     printf("Escogiste: %i", a);
