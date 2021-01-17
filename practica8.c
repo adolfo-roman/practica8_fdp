@@ -12,7 +12,6 @@ int main (void) {
     //Declarar variables
     float temp, res;
     int a, b, c;
-    char x;
     enum conv {CF, CK, FC, FK, KC, KF};
     enum conv valorConv;
 
@@ -46,7 +45,8 @@ int main (void) {
 
     system("clear");
 
-    switch (a) {
+    switch (a)
+    {
       case 1:
       do
       {
@@ -153,7 +153,8 @@ int main (void) {
     scanf("%f", &temp);
     system("clear");
 
-    switch (valorConv) {
+    switch (valorConv)
+    {
       case CF: //Convierte C -> F
         res = ((9*temp)/5)+32;
         printf("%.1f Celsius es igual a %.1f Fahrenheit\n", temp, res);
@@ -166,7 +167,6 @@ int main (void) {
 
       case FC: //Convierte F -> C
         res = (5*(temp-32)/9);
-        printf("%f\n", res);
         printf("%.1f Fahrenheit es igual a %.1f Celsius\n", temp, res);
         break;
 
@@ -184,23 +184,10 @@ int main (void) {
         res = ((9*(temp-273.15))/5)+32;
         printf("%.2f Kelvin es igual a %.2f Fahrenheit\n", temp, res);
         break;
-
     }
 
-    do {
-      printf("Desea realizar otra operacion? (y/n)");
-      getchar("%c", &x);
-    } while(x == 'y' || x == 'n');
-
-
-    if(x == 'y')
-    {
-      main();
-    }
-    else
-    {
-      printf("Gracias por usar el convertidor de Temperatura\n");
-      return 0;
-    }
+    printf("\nGracias por usar el convertidor de temperatura!\n");
+    printf("\n");
+    return 0;
 
 }
