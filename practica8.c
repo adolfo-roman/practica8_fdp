@@ -2,7 +2,9 @@
 
 int main (void) {
 
+test2
 
+test3
 
 
 }
