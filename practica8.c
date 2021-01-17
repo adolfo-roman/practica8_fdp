@@ -8,21 +8,29 @@ gustaria probar con switch
 
 int main (void) {
 
-  //Declarar variables
-  float c, f, k;
-  int a, b;
+    //Declarar variables
+    float c, f, k;
+    int a, b;
 
-  //Estructura inicial
-  printf("***Convertidor de Temperatura***\n");
-  printf("\n");
-  printf("Escoge la temperatura inicial:\n");
-  printf("\n");
-  printf("1) Celsius\n");
-  printf("2) Fahrenheit\n");
-  printf("3) Kelvin\n");
+    //Estructura primer caso
+    printf("***Convertidor de Temperatura***\n");
+    printf("\n");
+    printf("Escoge la temperatura inicial:");
+    printf("\n");
+    printf("1) Celsius\n");
+    printf("2) Fahrenheit\n");
+    printf("3) Kelvin\n");
+    printf("\n");
 
-  scanf("%i", &a);
+    scanf("%i", &a);
 
-  printf("Escogiste: %i\n", a);
+    while (a != 1 || a != 2 || a != 3)
+    {
+        printf("Por favor ingrese una opcion valida\n");
+        main()
+    }
+
+
+    printf("Escogiste: %i", a);
 
 }
