@@ -20,8 +20,9 @@ int main (void) {
   printf("1) Celsius\n");
   printf("2) Fahrenheit\n");
   printf("3) Kelvin\n");
-  scanf("%i\n", a);
 
-  printf("%i\n", a );
+  scanf("%i\n", &a);
+
+  printf("Escogiste: %i\n", a);
 
 }
