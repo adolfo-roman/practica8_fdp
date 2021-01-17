@@ -159,6 +159,21 @@ int main (void) {
         printf("%.1f Fahrenheit es igual a %.1f Celsius", temp, res);
         break;
 
+      case FK: //Convierte F -> K
+        res = (5/9)*(temp-32);
+        printf("%.1f Fahrenheit es igual a %.2f Kelvin", temp, res);
+        break;
+
+      case KC: //Convierte K -> C
+        res = (5/9)*(temp-32);
+        printf("%.2f Kelvin es igual a %.1f Celsius", temp, res);
+        break;
+
+      case KF: //Convierte K -> F
+        res = (5/9)*(temp-32);
+        printf("%.2f Kelvin es igual a %.1f Fahrenheit", temp, res);
+        break;
+
     }
 
 
