@@ -63,11 +63,11 @@ int main (void) {
 
       if(b = 1)
       {
-
+        c = 12;
       }
       else
       {
-
+        c = 13;
       }
       break;
 
@@ -91,10 +91,52 @@ int main (void) {
               printf("\n");
           }
       }
-      while (a < 1 || a > 3);
+      while (b < 1 || b > 2);
 
+      if(b = 1)
+      {
+        c = 21;
+      }
+      else
+      {
+        c = 23;
+      }
+      break;
+
+      case 3:
+      do
+      {
+          printf("Escoge la temperatura final: \n");
+          printf("\n");
+          printf("1) Celsius\n");
+          printf("2) Fahrenheit\n");
+
+          printf("\n");
+
+          scanf("%i", &b);
+
+          printf("\n");
+
+          if (b < 1 || b > 2)
+          {
+              printf("Por favor ingrese una opcion valida\n");
+              printf("\n");
+          }
+      }
+      while (b < 1 || b > 2);
+
+      if(b = 1)
+      {
+        c = 31;
+      }
+      else
+      {
+        c = 32;
+      }
       break;
 
     }
+
+    printf("%i", b);
 
 }
