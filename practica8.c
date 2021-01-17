@@ -144,17 +144,17 @@ int main (void) {
     scanf("%f", &temp);
 
     switch (valorConv) {
-      case 1: //Convierte C -> F
+      case CF: //Convierte C -> F
         res = ((9*temp)/5)+32;
-        printf("%.1f Celsius es igual a %.1f Fahrenheit", temp, res);
+        printf("%.1f Celsius es igual a %.1f Fahrenheit\n", temp, res);
         break;
 
-      case 2: //Convierte C -> K
+      case CK: //Convierte C -> K
         res = temp + 273.15;
         printf("%.1f Celsius es igual a %.2f Kelvin", temp, res);
         break;
 
-      case 3: //Convierte F -> C
+      case FC: //Convierte F -> C
         res = (5/9)*(temp-32);
         printf("%.1f Fahrenheit es igual a %.1f Celsius", temp, res);
         break;
