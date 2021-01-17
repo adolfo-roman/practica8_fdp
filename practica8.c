@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /*
 En esta practica escogi hacer un programa que originalmente iba a
@@ -13,6 +14,7 @@ int main (void) {
     int a, b, c;
 
     //Estructura primer caso
+    system("clear");
     printf("***Convertidor de Temperatura***\n");
     printf("\n");
 
@@ -32,7 +34,7 @@ int main (void) {
 
         if (a < 1 || a > 3)
         {
-            clrscr();
+            system("clear");
             printf("Por favor ingrese una opcion valida\n");
             printf("\n");
         }
