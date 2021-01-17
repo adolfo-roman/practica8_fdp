@@ -150,6 +150,12 @@ int main (void) {
         res = temp + 273.15;
         printf("%.1f Celsius es igual a %.2f Kelvin", temp, res);
         break;
+
+      case 21:
+        res = (5/9)*(temp-32);
+        printf("%.1f Fahrenheit es igual a %.1f Celsius", temp, res);
+        break;
+        
     }
 
 
