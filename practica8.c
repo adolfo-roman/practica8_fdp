@@ -9,7 +9,7 @@ gustaria probar con switch
 int main (void) {
 
     //Declarar variables
-    float f, k;
+    float temp, res;
     int a, b, c;
 
     //Estructura primer caso
@@ -137,6 +137,15 @@ int main (void) {
 
     }
 
-    printf("%i\n", c);
+    printf("Por favor ingrese la temperatura a convertir: \n");
+    scanf("%f", &temp);
+
+    switch (c) {
+      case 12:
+        res = ((9*temp)/5)+32
+        printf("%.1i Celsius es igual a %.1i Fahrenheit", temp, res);
+        break;
+    }
+
 
 }
