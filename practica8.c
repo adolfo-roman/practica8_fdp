@@ -12,28 +12,39 @@ int main (void) {
     //Declarar variables
     float temp, res;
     int a, b, c;
+    /*Conversiones posibles:
+    Celsius a Fahrenheit -> CF
+    Celsius a Kelvin -> CK
+    Fahrenheit a Celsius -> FC
+    Fahrenheit a Kelvin -> FK
+    Kelvin a Celsius -> KC
+    Kelvin a Fahrenheit -> KF
+    */
     enum conv {CF, CK, FC, FK, KC, KF};
     enum conv valorConv;
 
-    //Estructura primer caso
+    //Nombre del programa
     system("clear");
     printf("***Convertidor de Temperatura***\n");
     printf("\n");
 
+    //Menu para validar primera opcion
     do
     {
+        //Primer menu
         printf("Escoge la temperatura inicial: \n");
         printf("\n");
         printf("1) Celsius\n");
         printf("2) Fahrenheit\n");
         printf("3) Kelvin\n");
-
         printf("\n");
 
+        //Ingresar primera opcion
         scanf("%i", &a);
 
         printf("\n");
 
+        //Si opcion es erronea, muestra un aviso
         if (a < 1 || a > 3)
         {
             system("clear");
@@ -45,22 +56,25 @@ int main (void) {
 
     system("clear");
 
+    //Menu para validar segunda opcion
     switch (a)
     {
       case 1:
       do
       {
+          //Segundo menu
           printf("Escoge la temperatura final: \n");
           printf("\n");
           printf("1) Fahrenheit\n");
           printf("2) Kelvin\n");
-
           printf("\n");
 
+          //Ingresar segunda opcion
           scanf("%i", &b);
 
           printf("\n");
 
+          //Valida segunda opcion y si es erronea muestra aviso
           if (b < 1 || b > 2)
           {
             system("clear");
@@ -70,6 +84,7 @@ int main (void) {
       }
       while (b < 1 || b > 2);
 
+      //Evalua la opcion para ingresar tipo de conversion en el segundo switch
       if(b == 1)
       {
         valorConv = CF;
@@ -145,14 +160,16 @@ int main (void) {
         valorConv = KF;
       }
       break;
-
     }
 
+    //Ingresar medida escalar de temperatura a convertir
     system("clear");
     printf("Ingrese la temperatura a convertir: ");
     scanf("%f", &temp);
+
     system("clear");
 
+    //Convierte la temperatura a la escala deseada
     switch (valorConv)
     {
       case CF: //Convierte C -> F
@@ -186,6 +203,7 @@ int main (void) {
         break;
     }
 
+    // Final del programa
     printf("\nGracias por usar el convertidor de temperatura!\n");
     printf("\n");
     return 0;
