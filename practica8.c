@@ -10,7 +10,7 @@ int main (void) {
 
     //Declarar variables
     float c, f, k;
-    int a, b;
+    int a, b, c;
 
     //Estructura primer caso
     printf("***Convertidor de Temperatura***\n");
@@ -59,9 +59,41 @@ int main (void) {
               printf("\n");
           }
       }
-      while (a < 1 || a > 3);
+      while (b < 1 || b > 2);
+
+      if(b = 1)
+      {
+
+      }
+      else
+      {
+
+      }
       break;
 
+      case 2:
+      do
+      {
+          printf("Escoge la temperatura final: \n");
+          printf("\n");
+          printf("1) Celsius\n");
+          printf("2) Kelvin\n");
+
+          printf("\n");
+
+          scanf("%i", &b);
+
+          printf("\n");
+
+          if (b < 1 || b > 2)
+          {
+              printf("Por favor ingrese una opcion valida\n");
+              printf("\n");
+          }
+      }
+      while (a < 1 || a > 3);
+
+      break;
 
     }
 
