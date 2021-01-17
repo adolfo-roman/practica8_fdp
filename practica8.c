@@ -32,6 +32,7 @@ int main (void) {
 
         if (a < 1 || a > 3)
         {
+            clrscr();
             printf("Por favor ingrese una opcion valida\n");
             printf("\n");
         }
