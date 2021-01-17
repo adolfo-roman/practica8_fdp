@@ -9,7 +9,7 @@ gustaria probar con switch
 int main (void) {
 
     //Declarar variables
-    float c, f, k;
+    float f, k;
     int a, b, c;
 
     //Estructura primer caso
@@ -61,7 +61,7 @@ int main (void) {
       }
       while (b < 1 || b > 2);
 
-      if(b = 1)
+      if(b == 1)
       {
         c = 12;
       }
@@ -93,7 +93,7 @@ int main (void) {
       }
       while (b < 1 || b > 2);
 
-      if(b = 1)
+      if(b == 1)
       {
         c = 21;
       }
@@ -125,7 +125,7 @@ int main (void) {
       }
       while (b < 1 || b > 2);
 
-      if(b = 1)
+      if(b == 1)
       {
         c = 31;
       }
@@ -137,6 +137,6 @@ int main (void) {
 
     }
 
-    printf("%i", b);
+    printf("%i\n", c);
 
 }
